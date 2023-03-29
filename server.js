@@ -32,7 +32,7 @@ function generateArrays(data){
   }
 }
 
-app.post('/process', (req, res) => {
+app.post('/bfhl', (req, res) => {
   const data = req.body['data']
   const response_data = generateArrays(data)
   res.json(response_data)
